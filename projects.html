@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Kim's Notepad</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <!--Icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><img src="assets/logo.png" id="logo"></a>
+      <div class="nav-links" id="navLink">
+        <i class="fa fa-xmark" id="close" onclick="closeMenu()"></i>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-compass" id="menu" onclick="showMenu()"></i>
+    </nav>
+    <section class="pageSettings">
+      <div class="titleContainer" id="pageSettingTitle">
+        <i class="fa fa-gear" id="gear"></i>
+        <h1>Page Settings</h1>
+      </div>
+      <div class="buttonContainer">
+        <p onclick="cssOff()">Plain HTML</p>
+        <p onclick="cssOn()">CSS and JS</p>
+      </div>
+    </section>
+    <section class="project">
+      <div class="titleContainer">
+        <i class="fa fa-screwdriver-wrench"></i>
+        <h1>Projects</h1>
+      </div>
+      <div class="imageContainer">
+        <div class="row">
+          <div class="projectTitle">
+            <img src="assets/video.png" id="videoImg" onclick="showPopUp(0)">
+            <p>Campus Alone</p>
+          </div>
+          <div class="projectTitle">
+            <img src="assets/phone.png" id="phoneImg" onclick="showPopUp(1)">
+            <p>Car, Phone, And Death</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="projectTitle">
+            <img src="assets/baseball.png" id="baseballImg" onclick="showPopUp(2)">
+            <p>Why I Don't Play Baseball</p>
+          </div>
+          <div class="projectTitle">
+            <img src="assets/visitingD2.png" id="d2Img" onclick="showPopUp(3)">
+            <p>Visiting D2 In Two Years</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="projectTitle">
+            <img src="assets/plotter.png" id="plotterImg" onclick="showPopUp(4)">
+            <p>Pen Plotter</p>
+          </div>
+          <div class="projectTitle">
+            <img src="assets/comingSoon.png" id="comingSoonImg">
+            <p>Coming Soon!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popUp" id="popUpWindow">
+      <div class="popUpContainer" id="popUp0">
+        <div class="popUpContents">
+          <div class="titleContainer">
+            <i class="fa fa-code"></i>
+            <h1>Campus Alone</h1>
+            <i class="fa fa-xmark" id="closePopUp" onclick="closePopUp(0)"></i>
+          </div>
+          <img src="assets/video_mobile.png">
+          <a href="https://tim-kim-1227.github.io/VideoProject/"><h1>Link To Project</h1></a>
+        </div>
+        <div class="contentsContainer">
+          <p>The film I selected to make revolves around the concept of loneliness
+             as it is represented on the NYUAD campus. Loneliness, despair, and
+             homesickness are common sentiments among students. I wanted to emphasize
+             this because the campus is constantly buzzing with events, parties,
+             and gatherings, and no one really pays attention to the silent intervals
+             between everything, much alone read the lines between the silence. This
+             project aims to make students feel seen, heard, and know that they are not
+             alone in this experience. Different emotions may arise while watching the film,
+             and all feelings are welcome. The film's monologue attempts to capture the many
+             voices inside someone's head as they navigate life on campus with the
+             heavy burden of loneliness.
+             I've seen many friends or classmates lock themselves in their dorm rooms
+             and let all the negativity in. As a result, the repeated emphasis on
+             "four walls, one room, one lock.” With this project, I hope to raise
+             the student body's awareness of their peers' situations. This
+             fosters empathy and understanding among the students.
+          </p>
+        </div>
+      </div>
+      <div class="popUpContainer" id="popUp1">
+        <div class="popUpContents">
+          <div class="titleContainer">
+            <i class="fa fa-code"></i>
+            <h1>Car, Phone, And Death</h1>
+            <i class="fa fa-xmark" id="closePopUp" onclick="closePopUp(1)"></i>
+          </div>
+          <img src="assets/phone_mobile.png">
+          <a href="https://yashaswiim.github.io/the_phone_call/"><h1>Link To Project</h1></a>
+        </div>
+        <div class="contentsContainer">
+          <p>The film I selected to make revolves around the concept of loneliness
+             as it is represented on the NYUAD campus. Loneliness, despair, and
+             homesickness are common sentiments among students. I wanted to emphasize
+             this because the campus is constantly buzzing with events, parties,
+             and gatherings, and no one really pays attention to the silent intervals
+             between everything, much alone read the lines between the silence. This
+             project aims to make students feel seen, heard, and know that they are not
+             alone in this experience. Different emotions may arise while watching the film,
+             and all feelings are welcome. The film's monologue attempts to capture the many
+             voices inside someone's head as they navigate life on campus with the
+             heavy burden of loneliness.
+             I've seen many friends or classmates lock themselves in their dorm rooms
+             and let all the negativity in. As a result, the repeated emphasis on
+             "four walls, one room, one lock.” With this project, I hope to raise
+             the student body's awareness of their peers' situations. This
+             fosters empathy and understanding among the students.
+          </p>
+        </div>
+      </div>
+      <div class="popUpContainer" id="popUp2">
+        <div class="popUpContents">
+          <div class="titleContainer">
+            <i class="fa fa-code"></i>
+            <h1>Why I Don't Play Baseball</h1>
+            <i class="fa fa-xmark" id="closePopUp" onclick="closePopUp(2)"></i>
+          </div>
+          <img src="assets/baseball_mobile.png">
+          <a href="https://tim-kim-1227.github.io/comics/"><h1>Link To Project</h1></a>
+        </div>
+        <div class="contentsContainer">
+          <p>This project is about a baseball's journey from earth to space. It
+            is an interpretation of the more ironic end of the world. At the
+            beginning, the baseball player hits the ball with all his strength
+            and the ball travels beyond the earth's atmosphere, after which the
+            ball collides with a meteor. Then, pieces of the meteor head toward
+            earth and the player is horrified to witness the coming end of the
+            world. While working on the comic, the goal was to create an
+            experience for the viewers as if they were the main character.
+            Some parts of the comic like "Click me" from the first scene create
+            this feeling of central role in the storyline.
+          </p>
+        </div>
+      </div>
+      <div class="popUpContainer" id="popUp3">
+        <div class="popUpContents">
+          <div class="titleContainer">
+            <i class="fa fa-code"></i>
+            <h1>Visiting D2 In Two Years</h1>
+            <i class="fa fa-xmark" id="closePopUp" onclick="closePopUp(3)"></i>
+          </div>
+          <img src="assets/visitingD2_mobile.png">
+          <a href="https://tim-kim-1227.github.io/TimKim.github.io/"><h1>Link To Project</h1></a>
+        </div>
+        <div class="contentsContainer">
+          <p> his website is built for those who are not used to the renwed D2
+            this semester. I believe comsuming food is one of the most important
+            experience one can have on this campus. Returning to school in two
+            years, I was confused by the renewed counters and menu items when I
+            first entered D2. For the first few days of the school, I had to read
+            and ask about the menus before ordering any foods. And because of
+            this, getting foods in D2 was often stressing. This would be true
+            for other students who left the school before vendor changed or who
+            is new to the school! To help those in my situation, I wanted to
+            create an easily accessible virtual guide to D2, so no one has to ask
+            each counter what they serve. Through this website, I hope students
+            can have better sense of what food options they have in D2. The
+            website had to be concise yet informative as much as possible, which
+            was very challenging to find balance between the two. This website
+            removes the students' needs to physically explore the D2, which I
+            consider to be a waste of time and energy, so they can think about
+            foods they want to eat even before they visit D2.
+          </p>
+        </div>
+      </div>
+      <div class="popUpContainer" id="popUp4">
+        <div class="popUpContents">
+          <div class="titleContainer">
+            <i class="fa fa-gears"></i>
+            <h1>Pen Plotter</h1>
+            <i class="fa fa-xmark" id="closePopUp" onclick="closePopUp(4)"></i>
+          </div>
+          <iframe src="https://www.youtube.com/embed/A8X4-kKx73w" title="UserTesting-DrawingPlatform-InteractiveMedia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="contentsContainer">
+          <p>This pen plotter is a system that lets the user sketch a diagram or
+            shape on the p5.js canvas. This sketch then will be used to control
+            the physical arm of our drawing platform. To accomplish this, canvas
+            data is sent from p5.js to Arduino, controlling different parts of
+            the drawing device. The striking feature of the project is the
+            interconnectivity of the drawing. The user can draw as many shapes
+            or sketches as they desire, but everything will remain connected to
+            each other. This idea is inspired by the Eulerian trail, where the
+            floor is divided into multiple sections when multiple people step on it.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footerContainer">
+        <a href="https://github.com/Tim-Kim-1227"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.instagram.com/timkim1227"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100006725807179&mibextid=ZbWKwL"><i class="fa-brands fa-square-facebook"></i></a>
+      </div>
+      <p>Tim Kim</p>
+    </section>
+  <script src="script.js"></script>
+  </body>
+</html>
